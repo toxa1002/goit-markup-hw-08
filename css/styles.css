@@ -1,6 +1,9 @@
 :root {
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
+  --main-color: #212121;
+  --second-color: #757575;
+  --hover-color: #2196f3;
 }
 
 .list {
@@ -22,7 +25,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--hover-color);
 }
 
 .studio-logo-top {
@@ -39,11 +42,12 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-color);
 }
 .menu-link:hover,
-.menu-link:focus {
-  color: #2196f3;
+.menu-link:focus,
+.active {
+  color: var(--hover-color);
 }
 
 .mail-link {
@@ -51,11 +55,11 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--second-color);
 }
 .mail-link:hover,
 .mail-link:focus {
-  color: #2196f3;
+  color: var(--hover-color);
 }
 
 .tel-link {
@@ -63,12 +67,12 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--second-color);
 }
 
 .tel-link:hover,
 .tel-link:focus {
-  color: #2196f3;
+  color: var(--hover-color);
 }
 /* ========== END Шапка сайта =============  */
 
@@ -88,6 +92,7 @@ body {
 }
 
 .modal-btn {
+  font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -95,44 +100,38 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  background: #2196f3;
+  background: var(--hover-color);
   color: #ffffff;
   cursor: pointer;
 }
 /* ============== END Герой ============= */
 
 /* ============== Особенности ============= */
-.features {
-  background: #e5e5e5;
-}
 
 .features-list-item-head {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .features-list-item-description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--second-color);
 }
 /* ============== END Особенности ============= */
 
 /* ============== Чем Занимаемся ============= */
-.doing {
-  background: #e5e5e5;
-}
 
 .doing-head {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 /* ============== END Чем Занимаемся ============= */
 
@@ -146,7 +145,7 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .team-list-item-text {
@@ -155,7 +154,7 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .team-list-item-subtext {
@@ -163,7 +162,7 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--second-color);
 }
 /* ============== END Наша команда ============= */
 
@@ -172,21 +171,25 @@ body {
   background: #2f303a;
 }
 .web-logo-bot {
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--hover-color);
 }
 
 .studio-logo-bot {
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-
+.adress-bot {
+  font-style: normal;
+}
 .contacts-list-adress {
   font-weight: normal;
   font-size: 14px;
@@ -212,20 +215,20 @@ body {
 
 /* ============== Портфолио ============= */
 .nav-btn {
-  font-family: var(--secondary-font);
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
   background: #f5f4fa;
   cursor: pointer;
 }
 .nav-btn:hover,
 .nav-btn:focus {
   color: #ffffff;
-  background: #2196f3;
+  background: var(--hover-color);
 }
 projects-item {
   font-family: var(--secondary-font);
@@ -235,7 +238,7 @@ projects-item {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .projects-description {
@@ -243,6 +246,6 @@ projects-item {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--second-color);
 }
 /* ============== END Портфолио ============= */
