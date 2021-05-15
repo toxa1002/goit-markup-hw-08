@@ -6,12 +6,48 @@
   --hover-color: #2196f3;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .list {
   list-style: none;
 }
 
 .link {
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 body {
@@ -74,6 +110,43 @@ body {
 .tel-link:focus {
   color: var(--hover-color);
 }
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.head-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-link {
+  margin-right: 93px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 /* ========== END Шапка сайта =============  */
 
 /* ============== Герой ============= */
@@ -82,6 +155,11 @@ body {
 }
 
 .hero-text {
+  width: 696px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -92,6 +170,9 @@ body {
 }
 
 .modal-btn {
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
@@ -103,12 +184,23 @@ body {
   background: var(--hover-color);
   color: #ffffff;
   cursor: pointer;
+  padding: 10px 32px;
 }
 /* ============== END Герой ============= */
 
 /* ============== Особенности ============= */
 
+.features-list {
+  display: flex;
+  justify-content: center;
+  width: 1170px;
+}
 .features-list-item-head {
+  margin-right: 30px;
+}
+
+.features-list-item-head {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -117,22 +209,41 @@ body {
 }
 
 .features-list-item-description {
+  margin-right: 30px;
+  width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
+
 /* ============== END Особенности ============= */
 
 /* ============== Чем Занимаемся ============= */
 
 .doing-head {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
+.doing-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -50px;
+  margin-left: -30px;
+}
+
+.doing-list-item {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+/* .doing-list-item:not(:last-child) {
+  margin-right: 30px;
+} */
+
 /* ============== END Чем Занимаемся ============= */
 
 /* ============== Наша команда ============= */
@@ -141,11 +252,42 @@ body {
 }
 
 .team-head {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -50px;
+  margin-left: -30px;
+}
+
+.team-list-item {
+  /* padding-right: 30px; */
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.team-list-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+/* .team-list-item:not(:last-child) {
+  margin-right: 30px;
+} */
+
+.team-list-item-text {
+  margin-top: 30px;
+}
+.team-list-item-subtext {
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .team-list-item-text {
@@ -170,6 +312,11 @@ body {
 .footer-main {
   background: #2f303a;
 }
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
 .web-logo-bot {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -188,7 +335,12 @@ body {
   color: #ffffff;
 }
 .adress-bot {
+  margin-bottom: 60px;
+  width: 231px;
   font-style: normal;
+}
+.contacts-list-item:not(:last-child) {
+  padding-bottom: 9px;
 }
 .contacts-list-adress {
   font-weight: normal;
@@ -214,7 +366,25 @@ body {
 /* ============== END Футер ============= */
 
 /* ============== Портфолио ============= */
+
+.nav-portfolio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.nav-btn-list {
+  display: flex;
+  margin-left: -8px;
+}
+
+.nav-btn-item {
+  margin-left: 8px;
+}
+
 .nav-btn {
+  border: none;
+  padding: 6px 22px 6px 22px;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -224,6 +394,7 @@ body {
   color: var(--main-color);
   background: #f5f4fa;
   cursor: pointer;
+  border-radius: 4px;
 }
 .nav-btn:hover,
 .nav-btn:focus {
@@ -233,7 +404,26 @@ body {
 projects-item {
   font-family: var(--secondary-font);
 }
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-basis: calc((100% - 90px / 3); */
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.projects-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.projects-border {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
 .projects-head {
+  margin: 20px 24px 4px 24px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -242,6 +432,7 @@ projects-item {
 }
 
 .projects-description {
+  margin: 0px 24px 20px 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
