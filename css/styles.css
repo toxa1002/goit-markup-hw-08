@@ -28,9 +28,13 @@ img {
   display: block;
 }
 
-section {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section-sub {
+  padding-top: 94px;
 }
 
 .container {
@@ -128,6 +132,8 @@ body {
 
 .logo-link {
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .menu {
   display: flex;
@@ -152,6 +158,8 @@ body {
 /* ============== Герой ============= */
 .hero-section {
   background: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-text {
@@ -193,9 +201,10 @@ body {
 .features-list {
   display: flex;
   justify-content: center;
-  width: 1170px;
+  /* width: 1170px; */
 }
-.features-list-item-head {
+
+.features-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -209,7 +218,6 @@ body {
 }
 
 .features-list-item-description {
-  margin-right: 30px;
   width: 270px;
   font-size: 14px;
   line-height: 1.71;
@@ -232,17 +240,14 @@ body {
 .doing-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -50px;
+  margin-top: -30px;
   margin-left: -30px;
 }
 
 .doing-list-item {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: 30px;
 }
-/* .doing-list-item:not(:last-child) {
-  margin-right: 30px;
-} */
 
 /* ============== END Чем Занимаемся ============= */
 
@@ -263,13 +268,12 @@ body {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -50px;
+  margin-top: -30px;
   margin-left: -30px;
 }
 
 .team-list-item {
-  /* padding-right: 30px; */
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: 30px;
 }
 
@@ -278,16 +282,15 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-/* .team-list-item:not(:last-child) {
-  margin-right: 30px;
-} */
 
+.team-list-item-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-list-item-text {
-  margin-top: 30px;
 }
 .team-list-item-subtext {
   margin-top: 10px;
-  margin-bottom: 30px;
 }
 
 .team-list-item-text {
@@ -311,11 +314,21 @@ body {
 /* ============== Футер ============= */
 .footer-main {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
+}
+
+.footer-link {
+  margin-bottom: 30px;
+}
+
+.link-f {
+  text-decoration: none;
 }
 .web-logo-bot {
   font-family: var(--secondary-font);
@@ -335,12 +348,11 @@ body {
   color: #ffffff;
 }
 .adress-bot {
-  margin-bottom: 60px;
   width: 231px;
   font-style: normal;
 }
 .contacts-list-item:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .contacts-list-adress {
   font-weight: normal;
@@ -367,19 +379,14 @@ body {
 
 /* ============== Портфолио ============= */
 
-.nav-portfolio {
+.nav-btn-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.nav-btn-list {
-  display: flex;
-  margin-left: -8px;
-}
-
-.nav-btn-item {
-  margin-left: 8px;
+.nav-btn-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .nav-btn {
@@ -418,12 +425,12 @@ projects-item {
   margin-top: 30px;
 }
 .projects-border {
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: none;
   box-sizing: border-box;
 }
 .projects-head {
-  margin: 20px 24px 4px 24px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -432,7 +439,6 @@ projects-item {
 }
 
 .projects-description {
-  margin: 0px 24px 20px 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
