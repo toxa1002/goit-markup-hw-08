@@ -861,7 +861,6 @@ projects-item {
   letter-spacing: 0.01em;
   color: var(--second-color);
   margin-bottom: 10px;
-  /* cursor: pointer; */
 }
 
 .modal-form-input {
@@ -893,10 +892,6 @@ projects-item {
   fill: var(--hover-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .modal-form-input:focus .modal-btn-icon {
-  fill: var(--hover-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 .modal-form-message {
   width: 100%;
@@ -923,14 +918,6 @@ projects-item {
   border-color: var(--hover-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* ОТСЮДА НАЧИНАТЬ ЧЕКБОКС */
-
-/* .modal-form-checkbox {
-  position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-} */
 
 .modal-form-checkbox-policy::before {
   display: inline-block;
@@ -945,7 +932,6 @@ projects-item {
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: border-box;
-  /* fill: var(--hover-color); */
 }
 
 .modal-form-checkbox-policy {
@@ -968,7 +954,6 @@ projects-item {
 .modal-form-checkbox:focus + .modal-form-checkbox-policy::before {
   outline-color: #212121;
   box-shadow: 0 0 0 2px var(--hover-color);
-  /* background-color: tomato; */
 }
 
 .modal-form-policy-link {
