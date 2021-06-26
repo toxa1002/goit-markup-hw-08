@@ -1,8 +1,8 @@
-:root {
-  --main-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
-  --main-color: #212121;
-  --second-color: #757575;
-  --hover-color: #2196f3;
-  --icon-color: #afb1b8;
-}
+$mainColor: #212121;
+$transitionTimingFunc: cubic-bezier(0.4, 0, 0.2, 1);
+$secondColor: #757575;
+$hoverColor: #2196F3;
+$additionalColor: #ffffff;
+$portfolioItemShadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16);

@@ -1,0 +1,32 @@
+.address__box {
+  margin-top: 20px;
+  font-style: normal;
+  .address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .address__link--map {
+    color: $additionalColor;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  .address__link {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition: color 250ms $transitionTimingFunc;
+    &:hover,
+    &:focus {
+      color: $hoverColor;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .address__box {
+    text-align: center;
+  }
+}

@@ -1,0 +1,56 @@
+@media screen and (max-width: 1199px) {
+  .backdrop__checkbox .backdrop__checkbox-label {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop__checkbox .backdrop__checkbox-label {
+    font-size: 14px;
+  }
+}
+
+.backdrop__checkbox {
+  position: relative;
+  margin-bottom: 30px;
+  align-self: center;
+  .backdrop__checkbox-input {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    &:focus + .backdrop__checkbox-label::before {
+      border-color: $hoverColor;
+    }
+    &:checked + .backdrop__checkbox-label::before {
+      background-color: $hoverColor;
+      background-image: url(../images/checkbox-svg/icon-checkbox-checked.svg);
+      background-position: center;
+      background-size: 110%;
+      border-color: $hoverColor;
+    }
+  }
+
+  .backdrop__checkbox-label {
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $secondColor;
+    &::before {
+      content: '';
+      border: 2px solid $mainColor;
+      border-radius: 3px;
+      display: inline-block;
+      width: 16px;
+      height: 15px;
+      margin-right: 7px;
+      cursor: pointer;
+      vertical-align: middle;
+      transition: border-color 250ms $transitionTimingFunc,
+        background-color 250ms $transitionTimingFunc;
+    }
+    .backdrop__policy-link {
+      text-decoration: underline;
+      color: $hoverColor;
+    }
+  }
+}

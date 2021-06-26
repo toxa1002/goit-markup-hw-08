@@ -1,0 +1,124 @@
+@media screen and (max-width: 767px) {
+  .mobile-menu__container.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .menu-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 11px 10.33px;
+    background-color: transparent;
+    border: none;
+  }
+  .menu-close-btn:hover .close-btn {
+    fill: $hoverColor;
+  }
+  .close-btn {
+    width: 18px;
+    height: 18px;
+    fill: #000000;
+  }
+  .mobile-menu__container {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $additionalColor;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .header__burger-btn {
+    padding: 12px 8px;
+    border: none;
+    background-color: transparent;
+    &:hover .header__burger-btn--icon {
+      fill: $hoverColor;
+    }
+  }
+  .header__burger-btn--icon {
+    display: block;
+    width: 24px;
+    height: 16px;
+    fill: black;
+  }
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mobile-menu__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 40px;
+  }
+  .nav-list__link {
+    font-style: 400;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+    color: $mainColor;
+    &:hover {
+      color: $hoverColor;
+    }
+  }
+  .nav-list__item .current {
+    color: $hoverColor;
+  }
+  .nav-list__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .contacts-list__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .mobile-menu__contacts-list {
+    margin-bottom: 64px;
+  }
+  .contacts-link {
+    font-style: 400;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.02em;
+    color: $secondColor;
+    &:hover {
+      font-style: 400;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: calc(40 / 34);
+      letter-spacing: 0.02em;
+      color: $hoverColor;
+    }
+  }
+  .mobile-menu__social-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .social-list__item:not(:last-child) {
+    margin-right: 20px;
+    .social-list__link::after {
+      content: ' ';
+      position: relative;
+      left: 10px;
+      width: 22px;
+      height: 0px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
+    }
+  }
+  .social-list__link {
+    color: $hoverColor;
+    font-style: 400;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+  }
+}
